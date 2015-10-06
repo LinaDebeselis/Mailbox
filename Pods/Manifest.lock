@@ -1,0 +1,10 @@
+PODS:
+  - DynamicColor (2.0.0)
+
+DEPENDENCIES:
+  - DynamicColor
+
+SPEC CHECKSUMS:
+  DynamicColor: bd4ccde8466ccbf0dd40900aa8be93a5ea482724
+
+COCOAPODS: 0.38.2

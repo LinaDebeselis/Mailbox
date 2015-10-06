@@ -38,9 +38,24 @@ class MailboxViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var laterView: UIImageView!
     
     
+    
+    //Shake to undo
+    
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == UIEventSubtype.MotionShake {
-            /// TODO
+            
+            messageScrollView.alpha = 1
+            
+            messageImageView.hidden = false
+            laterIconImageView.hidden = false
+//            archiveImageView.hidden = false
+//            deleteIconImageView.hidden = false
+            listIconImageView.hidden = false
+            messageImageView.center = messageOriginalCenter
+            
+            feedImageView.center = CGPoint(x: feedImageView.center.x, y: feedImageView.center.y + 85)
+            
+            
         }
     }
     
@@ -67,6 +82,8 @@ class MailboxViewController: UIViewController, UIGestureRecognizerDelegate {
         let leftPan = UIScreenEdgePanGestureRecognizer(target: self, action: "onEdgePan:")
         leftPan.edges = .Left
         inboxView.addGestureRecognizer(leftPan)
+        
+        self.laterView.alpha = 0
       
     }
     
@@ -318,7 +335,8 @@ class MailboxViewController: UIViewController, UIGestureRecognizerDelegate {
                 self.searchImageView.center = CGPoint(x: -160.0, y: self.searchImageView.center.y)
                 self.messageScrollView.center = CGPoint(x: -160.0, y: self.messageScrollView.center.y)
                 self.helpImageView.center = CGPoint(x: -160.0, y: self.helpImageView.center.y)
-                
+                self.laterView.alpha = 1
+                self.archivedFeedView.alpha = 1
 
             })
         } else if (navBar.selectedSegmentIndex == 1) {
@@ -330,6 +348,8 @@ class MailboxViewController: UIViewController, UIGestureRecognizerDelegate {
                 self.searchImageView.center = CGPoint(x: 160.0, y: self.searchImageView.center.y)
                 self.messageScrollView.center = CGPoint(x: 160.0, y: self.messageScrollView.center.y)
                 self.helpImageView.center = CGPoint(x: 160.0, y: self.helpImageView.center.y)
+                self.laterView.alpha = 0
+                self.archivedFeedView.alpha = 1
             })
             
         }
@@ -339,34 +359,23 @@ class MailboxViewController: UIViewController, UIGestureRecognizerDelegate {
             UIView.animateWithDuration(0.3, animations: { () -> Void in
                 self.feedImageView.center = CGPoint(x: 480.0, y: self.feedImageView.center.y)
                 self.laterView.center = CGPoint(x: 160.0, y: self.laterView.center.y)
+                self.archivedFeedView.center = CGPoint(x: 480.0, y: self.archivedFeedView.center.y)
                 self.searchImageView.center = CGPoint(x: 480.0, y: self.searchImageView.center.y)
                 self.messageScrollView.center = CGPoint(x: 480.0, y: self.messageScrollView.center.y)
                 self.helpImageView.center = CGPoint(x: 480.0, y: self.helpImageView.center.y)
+                self.laterView.alpha = 1
+                self.archivedFeedView.alpha = 0
                 
                 
             })
-//        } else {
-//            navBar.tintColor = UIColor(hex: 0x44AAD2)
-//            UIView.animateWithDuration(0.3, animations: { () -> Void in
-//                self.feedImageView.center = CGPoint(x: 160.0, y: self.feedImageView.center.y)
-//                self.laterView.center = CGPoint(x: 320.0+160.0, y: self.laterView.center.y)
-//                self.searchImageView.center = CGPoint(x: 160.0, y: self.searchImageView.center.y)
-//                self.messageScrollView.center = CGPoint(x: 160.0, y: self.messageScrollView.center.y)
-//                self.helpImageView.center = CGPoint(x: 160.0, y: self.helpImageView.center.y)
-//            })
-//            
-//        }
 
         }
     }
+    
 }
 
-    
-    
-    
-    
-    
-    //Button to bring back the message view
-    
+
+
+
 
         

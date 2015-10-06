@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04C4D9424AE29FD7D1E024C1 /* Pods_Mailbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A14CD93FC7FCE787E6C00B3 /* Pods_Mailbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AE920F4F1BC393E600079DB2 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE920F4E1BC393E600079DB2 /* NewMessageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AECF6AEF1BBCDAE70020F3BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF6AEE1BBCDAE70020F3BB /* AppDelegate.swift */; };
 		AECF6AF11BBCDAE70020F3BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF6AF01BBCDAE70020F3BB /* ViewController.swift */; };
 		AECF6AF41BBCDAE70020F3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECF6AF21BBCDAE70020F3BB /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		08C611B4675CB721C0067097 /* Pods-Mailbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mailbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mailbox/Pods-Mailbox.debug.xcconfig"; sourceTree = "<group>"; };
 		0A14CD93FC7FCE787E6C00B3 /* Pods_Mailbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mailbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE920F4E1BC393E600079DB2 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		AECF6AEB1BBCDAE70020F3BB /* Mailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mailbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF6AEE1BBCDAE70020F3BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECF6AF01BBCDAE70020F3BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		AECF6AE21BBCDAE70020F3BB = {
 			isa = PBXGroup;
 			children = (
+				AE920F4E1BC393E600079DB2 /* NewMessageViewController.swift */,
 				AECF6AED1BBCDAE70020F3BB /* Mailbox */,
 				AECF6B021BBCDAE70020F3BB /* MailboxTests */,
 				AECF6B0D1BBCDAE70020F3BB /* MailboxUITests */,
@@ -336,6 +339,7 @@
 				AECF6AF11BBCDAE70020F3BB /* ViewController.swift in Sources */,
 				AECF6AEF1BBCDAE70020F3BB /* AppDelegate.swift in Sources */,
 				AECF6B1D1BBCDC7C0020F3BB /* MailboxViewController.swift in Sources */,
+				AE920F4F1BC393E600079DB2 /* NewMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
