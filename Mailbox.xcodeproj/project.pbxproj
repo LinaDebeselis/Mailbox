@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C4D9424AE29FD7D1E024C1 /* Pods_Mailbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A14CD93FC7FCE787E6C00B3 /* Pods_Mailbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AECF6AEF1BBCDAE70020F3BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF6AEE1BBCDAE70020F3BB /* AppDelegate.swift */; };
 		AECF6AF11BBCDAE70020F3BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF6AF01BBCDAE70020F3BB /* ViewController.swift */; };
 		AECF6AF41BBCDAE70020F3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECF6AF21BBCDAE70020F3BB /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		AECF6AF91BBCDAE70020F3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECF6AF71BBCDAE70020F3BB /* LaunchScreen.storyboard */; };
 		AECF6B041BBCDAE70020F3BB /* MailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF6B031BBCDAE70020F3BB /* MailboxTests.swift */; };
 		AECF6B0F1BBCDAE70020F3BB /* MailboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF6B0E1BBCDAE70020F3BB /* MailboxUITests.swift */; };
+		AECF6B1D1BBCDC7C0020F3BB /* MailboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECF6B1C1BBCDC7C0020F3BB /* MailboxViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C611B4675CB721C0067097 /* Pods-Mailbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mailbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mailbox/Pods-Mailbox.debug.xcconfig"; sourceTree = "<group>"; };
+		0A14CD93FC7FCE787E6C00B3 /* Pods_Mailbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mailbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF6AEB1BBCDAE70020F3BB /* Mailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mailbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF6AEE1BBCDAE70020F3BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AECF6AF01BBCDAE70020F3BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		AECF6B0A1BBCDAE70020F3BB /* MailboxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailboxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF6B0E1BBCDAE70020F3BB /* MailboxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailboxUITests.swift; sourceTree = "<group>"; };
 		AECF6B101BBCDAE70020F3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECF6B1C1BBCDC7C0020F3BB /* MailboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailboxViewController.swift; sourceTree = "<group>"; };
+		F029DC9FA6B5B09D228E92B6 /* Pods-Mailbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mailbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mailbox/Pods-Mailbox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C4D9424AE29FD7D1E024C1 /* Pods_Mailbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21BDD95E9ECD3F4879E44AAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A14CD93FC7FCE787E6C00B3 /* Pods_Mailbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49A96EBA6E21C68ED0DDBC2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08C611B4675CB721C0067097 /* Pods-Mailbox.debug.xcconfig */,
+				F029DC9FA6B5B09D228E92B6 /* Pods-Mailbox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AECF6AE21BBCDAE70020F3BB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				AECF6B021BBCDAE70020F3BB /* MailboxTests */,
 				AECF6B0D1BBCDAE70020F3BB /* MailboxUITests */,
 				AECF6AEC1BBCDAE70020F3BB /* Products */,
+				49A96EBA6E21C68ED0DDBC2D /* Pods */,
+				21BDD95E9ECD3F4879E44AAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +126,7 @@
 				AECF6AEE1BBCDAE70020F3BB /* AppDelegate.swift */,
 				AECF6AF01BBCDAE70020F3BB /* ViewController.swift */,
 				AECF6AF21BBCDAE70020F3BB /* Main.storyboard */,
+				AECF6B1C1BBCDC7C0020F3BB /* MailboxViewController.swift */,
 				AECF6AF51BBCDAE70020F3BB /* Assets.xcassets */,
 				AECF6AF71BBCDAE70020F3BB /* LaunchScreen.storyboard */,
 				AECF6AFA1BBCDAE70020F3BB /* Info.plist */,
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AECF6B131BBCDAE70020F3BB /* Build configuration list for PBXNativeTarget "Mailbox" */;
 			buildPhases = (
+				A928DDFAFE8826CE5198E118 /* Check Pods Manifest.lock */,
 				AECF6AE71BBCDAE70020F3BB /* Sources */,
 				AECF6AE81BBCDAE70020F3BB /* Frameworks */,
 				AECF6AE91BBCDAE70020F3BB /* Resources */,
+				DDBB311D072E2C629F5AC3BC /* Embed Pods Frameworks */,
+				C31C36407730B1AE3359D9F7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +280,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A928DDFAFE8826CE5198E118 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C31C36407730B1AE3359D9F7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mailbox/Pods-Mailbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDBB311D072E2C629F5AC3BC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mailbox/Pods-Mailbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AECF6AE71BBCDAE70020F3BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,6 +335,7 @@
 			files = (
 				AECF6AF11BBCDAE70020F3BB /* ViewController.swift in Sources */,
 				AECF6AEF1BBCDAE70020F3BB /* AppDelegate.swift in Sources */,
+				AECF6B1D1BBCDC7C0020F3BB /* MailboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +473,7 @@
 		};
 		AECF6B141BBCDAE70020F3BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C611B4675CB721C0067097 /* Pods-Mailbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mailbox/Info.plist;
@@ -405,6 +485,7 @@
 		};
 		AECF6B151BBCDAE70020F3BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F029DC9FA6B5B09D228E92B6 /* Pods-Mailbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Mailbox/Info.plist;
@@ -481,6 +562,7 @@
 				AECF6B151BBCDAE70020F3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AECF6B161BBCDAE70020F3BB /* Build configuration list for PBXNativeTarget "MailboxTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +571,7 @@
 				AECF6B181BBCDAE70020F3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AECF6B191BBCDAE70020F3BB /* Build configuration list for PBXNativeTarget "MailboxUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +580,7 @@
 				AECF6B1B1BBCDAE70020F3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
