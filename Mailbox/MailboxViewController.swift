@@ -38,6 +38,12 @@ class MailboxViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var laterView: UIImageView!
     
     
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == UIEventSubtype.MotionShake {
+            /// TODO
+        }
+    }
+    
     
     func gestureRecognizer(_: UIGestureRecognizer,shouldRecognizeSimultaneouslyWithGestureRecognizer:UIGestureRecognizer) -> Bool {
         return true
